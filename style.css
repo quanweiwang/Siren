@@ -946,7 +946,10 @@ a:active {
 }
 
 .site-title {
-    margin: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 50px;
 }
 
 .site-title a {
@@ -1003,6 +1006,7 @@ a:active {
     position: relative;
     float: right;
     display: none;
+    margin: 0 100px 0 0;
     animation: searchbox .2s;
 }
 

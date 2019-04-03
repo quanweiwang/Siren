@@ -231,6 +231,13 @@ function optionsframework_options() {
 		'std' => '',
 		'type' => 'textarea');
 
+	$options[] = array(
+		'name' => __('建站日期', 'options_framework_theme'),
+		'desc' => __('日期格式：2019-2-25（年-月-日）', 'options_framework_theme'),
+		'id' => 'web_buildtime',
+		'std' => '2019-2-25',
+		'type' => 'text');
+
 	// $options[] = array(
 	// 	'name' => __('站长统计', 'options_framework_theme'),
 	// 	'desc' => __('填写统计代码，将被隐藏，如需要在下方填写链接地址', 'options_framework_theme'),
