@@ -65,7 +65,7 @@ if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
 		<?php } ?>
 		<div id="page" class="site wrapper">
 			<header class="site-header" role="banner">
-				<div class="site-top">
+				<div class="site-top yya">
 					<div class="site-branding">
 						<?php if (akina_option('akina_logo')){ ?>
 						<div class="site-title"><a href="<?php bloginfo('url');?>" ><img src="<?php echo akina_option('akina_logo'); ?>"></a></div>

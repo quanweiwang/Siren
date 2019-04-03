@@ -225,18 +225,25 @@ function optionsframework_options() {
 		'type' => 'textarea');
 
 	$options[] = array(
-		'name' => __('站长统计', 'options_framework_theme'),
-		'desc' => __('填写统计代码，将被隐藏，如需要在下方填写链接地址', 'options_framework_theme'),
-		'id' => 'site_statistics',
+		'name' => __('icp备案信息', 'options_framework_theme'),
+		'desc' => __('例如: 闽ICP备00000000-1号，支持HTML代码', 'options_framework_theme'),
+		'id' => 'footer_icp',
 		'std' => '',
 		'type' => 'textarea');
 
-	$options[] = array(
-		'name' => __('站长统计后台地址', 'options_framework_theme'),
-		'desc' => __('填写查看统计数据的链接', 'options_framework_theme'),
-		'id' => 'site_statistics_link',
-		'std' => '',
-		'type' => 'text');
+	// $options[] = array(
+	// 	'name' => __('站长统计', 'options_framework_theme'),
+	// 	'desc' => __('填写统计代码，将被隐藏，如需要在下方填写链接地址', 'options_framework_theme'),
+	// 	'id' => 'site_statistics',
+	// 	'std' => '',
+	// 	'type' => 'textarea');
+
+	// $options[] = array(
+	// 	'name' => __('站长统计后台地址', 'options_framework_theme'),
+	// 	'desc' => __('填写查看统计数据的链接', 'options_framework_theme'),
+	// 	'id' => 'site_statistics_link',
+	// 	'std' => '',
+	// 	'type' => 'text');
 
 	$options[] = array(
 		'name' => __('网站地图地址', 'options_framework_theme'),
@@ -676,12 +683,12 @@ function optionsframework_options() {
 		'std' => '0',
 		'type' => 'checkbox');
 
-	$options[] = array(
-		'name' => __('开启多说插件支持', 'options_framework_theme'),
-		'desc' => __('如果使用多说插件，请勾选此项', 'options_framework_theme'),
-		'id' => 'general_disqus_plugin_support',
-		'std' => '0',
-		'type' => 'checkbox');
+	// $options[] = array(
+	// 	'name' => __('开启多说插件支持', 'options_framework_theme'),
+	// 	'desc' => __('如果使用多说插件，请勾选此项', 'options_framework_theme'),
+	// 	'id' => 'general_disqus_plugin_support',
+	// 	'std' => '0',
+	// 	'type' => 'checkbox');
 
 	$options[] = array(
 		'name' => __('开启Prism代码高亮支持', 'options_framework_theme'),
