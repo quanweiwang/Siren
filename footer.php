@@ -22,31 +22,19 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<div class="footertext">
-				<p class="foo-logo" style="background-image: url('<?php bloginfo('template_url'); ?>/images/f-logo.png');"></p>
-				<!-- http://www.miitbeian.gov.cn -->
-				<p>
-					<?php 
-						$footer_icp = akina_option('footer_icp') ? '<a href="http://www.miitbeian.gov.cn" target="_blank" rel="nofollow"> '.akina_option('footer_icp', '').' </a>' : ''; 
-						$footer_info = akina_option('footer_info') ? akina_option('footer_info') : '';
-						printf(esc_html__('%1$s &nbsp; %2$s', 'akina'), $footer_info, $footer_icp);
-					?>
-				</p>
-				
+				<p><?php echo akina_option('footer_info', ''); ?> <a href="http://www.miitbeian.gov.cn" rel="designer" target="_blank" rel="nofollow"><?php echo akina_option('footer_icp', ''); ?></a></p>
 			</div>
 			<div class="footer-device">
-			<?php 
-			$statistics_link = akina_option('site_statistics_link') ? '<a href="'.akina_option('site_statistics_link').'" target="_blank" rel="nofollow">Statistics</a>' : '';
-			$site_map_link = akina_option('site_map_link') ? '<a href="'.akina_option('site_map_link').'" target="_blank" rel="nofollow">Sitemap</a>' : '';
-			printf(esc_html__( '%1$s &nbsp; %2$s &nbsp; %3$s &nbsp; %4$s', 'akina' ), $site_map_link, '<a href="http://www.akina.pw/themeakina" rel="designer" target="_blank" rel="nofollow">Theme</a>', '<a href="https://wordpress.org/" target="_blank" rel="nofollow">WordPress</a>', $statistics_link); 
-			?>
+				<?php /* 能保留下面两个链接吗？算是我一个小小的心愿吧~ */ ?>
+				Theme <a href="https://www.wangquanwei.com/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Siren(改)</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://www.wangquanwei.com/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">王权伟</a> 
+			</div>
 			<!-- 站点运行天数开始 -->
-			<?php if (mokore_option('web_runtime') != '0') { ?>
-					<div class="footer-device">
-							<p>本站已稳定运行 <?php echo get_web_buildtime(); ?> 天</p>
-					</div>
+			<?php if (akina_option('web_runtime') != '0') { ?>
+				<div class="footer-device">
+					<p>本站已稳定运行 <?php echo get_web_buildtime(); ?> 天</p>
+				</div>
 			<?php } ?>
 			<!--站点运行天数结束  -->
-			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 	<div class="openNav">

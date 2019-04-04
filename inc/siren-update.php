@@ -10,6 +10,19 @@ remove_filter('term_description', 'wp_kses_data');
 // 去除顶部工具栏
 show_admin_bar(false);
 
+/**
+ * 网页运行时间
+ */
+function get_web_buildtime()
+{
+    $now_time = date("Y-m-d");
+    $buil_dtime = akina_option('web_buildtime');
+    $date = "$buil_dtime";
+    $time_1 = strtotime($now_time);
+    $time_2 = strtotime($date);
+    $result = round(($time_1 - $time_2) / 3600 / 24);
+    return $result;
+}
 
 /*
  * 视频

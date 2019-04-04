@@ -232,6 +232,13 @@ function optionsframework_options() {
 		'type' => 'textarea');
 
 	$options[] = array(
+		'name' => __('显示网站运行时间', 'options_framework_theme'),
+		'desc' => __('默认关闭，勾选开启', 'options_framework_theme'),
+		'id' => 'web_runtime',
+		'std' => '0',
+		'type' => 'checkbox');
+
+	$options[] = array(
 		'name' => __('建站日期', 'options_framework_theme'),
 		'desc' => __('日期格式：2019-2-25（年-月-日）', 'options_framework_theme'),
 		'id' => 'web_buildtime',
