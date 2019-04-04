@@ -259,12 +259,12 @@ function optionsframework_options() {
 	// 	'std' => '',
 	// 	'type' => 'text');
 
-	$options[] = array(
-		'name' => __('网站地图地址', 'options_framework_theme'),
-		'desc' => __('Sitemap生成的地图链接', 'options_framework_theme'),
-		'id' => 'site_map_link',
-		'std' => '',
-		'type' => 'text');
+	// $options[] = array(
+	// 	'name' => __('网站地图地址', 'options_framework_theme'),
+	// 	'desc' => __('Sitemap生成的地图链接', 'options_framework_theme'),
+	// 	'id' => 'site_map_link',
+	// 	'std' => '',
+	// 	'type' => 'text');
 
 	$options[] = array(
 		'name' => __('自定义CSS样式', 'options_framework_theme'),
@@ -286,6 +286,13 @@ function optionsframework_options() {
 		'std' => '0',
 		'type' => 'checkbox');
 
+	$options[] = array(
+		'name' => __('Akina倾斜设计', 'options_framework_theme'),
+		'desc' => __('默认关闭，勾选关闭', 'options_framework_theme'),
+		'id' => 'focus_slant',
+		'std' => '1',
+		'type' => 'checkbox');
+	
 	$options[] = array(
 		'name' => __('社交信息', 'options_framework_theme'),
 		'desc' => __('默认开启，勾选关闭，显示头像、签名、SNS', 'options_framework_theme'),

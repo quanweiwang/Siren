@@ -379,7 +379,7 @@ var home = location.href,
                 }
                 ss = s;
             }
-        });
+        }); 
     },
 
     // Ajax加载文章

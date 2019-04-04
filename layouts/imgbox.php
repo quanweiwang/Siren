@@ -3,6 +3,10 @@ $image_file = get_random_bg_url() ? 'background-image: url('.get_random_bg_url()
 $bg_style = akina_option('focus_height') ? 'background-position: center center;background-attachment: inherit;' : '';
 ?>
 <figure id="centerbg" class="centerbg" style="<?php echo $image_file.$bg_style ?>">
+	<?php if(!akina_option('focus_slant')){ ?>
+		<div class="slant-left"></div>
+		<div class="slant-right"></div>
+	<?php } ?>
 	<?php if ( !akina_option('focus_infos') ){ ?>
 	<div class="focusinfo">
    		<?php if (akina_option('focus_logo')):?>
