@@ -45,7 +45,7 @@ if (akina_option('akina_meta') == true) {
 <meta name="description" content="<?php echo $description; ?>" />
 <meta name="keywords" content="<?php echo $keywords; ?>" />
 <?php } ?>
-<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.ico"/> 
+<link rel="shortcut icon" href="<?php echo akina_option('akina_logo'); ?>"/> 
 <?php wp_head(); ?>
 <script type="text/javascript">
 if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
