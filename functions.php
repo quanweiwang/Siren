@@ -616,23 +616,6 @@ function comment_mail_notify($comment_id){
 }
 add_action('comment_post', 'comment_mail_notify');
 
-/*
- * 代码高亮
- */
-function add_prism() {
-        wp_register_style(
-            'prismCSS', 
-            get_stylesheet_directory_uri() . '/prism/prism.css' //自定义路径
-         );
-          wp_register_script(
-            'prismJS',
-            get_stylesheet_directory_uri() . '/prism/prism.js'   //自定义路径
-         );
-        wp_enqueue_style('prismCSS');
-        wp_enqueue_script('prismJS');
-    }
-add_action('wp_enqueue_scripts', 'add_prism');
-
 //code end 
 
 
