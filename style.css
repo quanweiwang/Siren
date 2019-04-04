@@ -1681,8 +1681,8 @@ i.iconfont.hotpost {
 }
 
 .entry-content code {
-    background: #eee;
-    color: #E67474;
+    /*background: #eee;
+    color: #E67474;*/
     word-break: break-word;
     font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
     padding: 2px;
