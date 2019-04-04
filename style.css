@@ -835,7 +835,7 @@ a:active {
     color: #FFFFFF;
     font-size: 40px;
     font-weight: 500;
-    width: 75%;
+    width: 80%;
     margin: auto;
     padding: 0;
     border: 0;
@@ -1222,7 +1222,7 @@ a:active {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 70%;
+    width: 65%;
 }
 
 .entry-title a {
