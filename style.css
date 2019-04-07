@@ -1027,7 +1027,8 @@ a:active {
 
 .site-top ul li {
     float: left;
-    margin-left: 28px;
+    margin-left: 14px;
+    margin-right: 14px;
     position: relative;
     -webkit-transition: all 1s ease;
 }
@@ -1092,16 +1093,28 @@ a:active {
     display: none;
     opacity: 1;
     position: absolute;
-    background: none;
+    background: #fff;
     padding: 10px;
-    top: 31px;
-    right: -10px;
-    width: 150px;
-    text-align: right;
+    top: 46px;
+    right: -13px;
+    width: 80px;
+    text-align: center;
     z-index: 9999;
     border-radius: 5px;
+    box-shadow: 0 1px 40px -8px rgba(0, 0, 0, .5);
     -webkit-animation: fadeInUp .3s .1s ease both;
     -moz-animation: fadeInUp .3s .1s ease both
+}
+
+.lower li ul::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent
 }
 
 @-webkit-keyframes fadeInUp {
@@ -1137,6 +1150,7 @@ a:active {
 .lower li ul li {
     width: 100%;
     margin: 0;
+
 }
 
 .site-top .menu-item-has-children li a {
