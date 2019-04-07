@@ -22,11 +22,8 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<div class="footertext">
-				<p><?php echo akina_option('footer_info', ''); ?> <a href="http://www.miitbeian.gov.cn" rel="designer" target="_blank" rel="nofollow"><?php echo akina_option('footer_icp', ''); ?></a></p>
-			</div>
-			<div class="footer-device">
-				<?php /* 能保留下面两个链接吗？算是我一个小小的心愿吧~ */ ?>
-				Theme <a href="https://www.wangquanwei.com/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Siren(改)</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://www.wangquanwei.com/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">王权伟</a> 
+				<p><?php echo akina_option('footer_info', ''); ?></p>
+				<p><a href="http://www.miitbeian.gov.cn" rel="designer" target="_blank" rel="nofollow"><?php echo akina_option('footer_icp', ''); ?></a></p>
 			</div>
 			<!-- 站点运行天数开始 -->
 			<?php if (akina_option('web_runtime') != '0') { ?>

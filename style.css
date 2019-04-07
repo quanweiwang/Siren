@@ -1349,15 +1349,29 @@ i.iconfont.hotpost {
 .post-list-thumb {
     float: left;
     width: 100%;
-    height: auto;
+    height: 300px;
     position: relative;
-    margin: 20px 0 80px;
-    padding: 40px;
-    border: 1px solid rgba(0,0,0,0.05);
-    background-color: #FFFFFF
+    margin: 20px 0 40px 0;
+    padding: 20px 40px 20px 40px;
+    /*border: 1px solid rgba(0,0,0,0.05);*/
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 1px 20px -8px rgba(0,0,0,0.5);
+    overflow: hidden;
+    transform-style: preserve-3d;
 }
 
-.post-list-thumb::before {
+.post-list-thumb img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s;
+}
+
+.post-list-thumb:hover img {
+    transform: scale(1.2);
+}
+
+/*.post-list-thumb::before {
     content: '';
     width: 1px;
     height: 100px;
@@ -1368,7 +1382,7 @@ i.iconfont.hotpost {
     margin: auto;
     bottom: -101px;
     z-index: 0;
-}
+}*/
 
 .post-list-thumb i {
     margin-right: 5px;
@@ -1387,13 +1401,19 @@ i.iconfont.hotpost {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
+    text-align: left;
 }
 
-.post-date,
+.post-date {
+    color: #888;
+    font-size: 12px;
+}
+
 .post-meta,
 .post-meta a {
     color: #888;
     font-size: 12px;
+    text-align: left;
 }
 
 .comments-number {
@@ -1403,6 +1423,8 @@ i.iconfont.hotpost {
 .post-thumb {
     float: right;
     width: 55%;
+    background-size: contain;
+    overflow: hidden;
 }
 
 .post-thumb a {
@@ -1431,6 +1453,7 @@ i.iconfont.hotpost {
     z-index: 500;
     background: #fff;
     color: rgba(0,0,0,.66);
+    text-align: left;
 }
 
 .float-content .post-text {
@@ -3347,7 +3370,8 @@ h1.fes-title , h1.main-title {
 
 .top-feature img {
     height: 160px;
-    width: 257px
+    width: 257px;
+    border-radius: 10px;
 }
 
 .top-feature li {
@@ -3369,10 +3393,14 @@ li.feature-2 {
     height: 160px;
     text-align: center;
     line-height: 160px;
-    background: #BBE2DB;
+    /*background: #BBE2DB;*/
+    background-color: rgba(0,0,0,0);
     color: white;
     font-size: 16px;
-    opacity: 0;
+    /*opacity: 0;*/
+    border-radius: 10px;
+    transition:background-color 0.3s linear;
+    transform-style: preserve-3d;
 }
 
 .foverlay {
@@ -3383,7 +3411,7 @@ li.feature-2 {
 }
 
 .top-feature li:hover .feature-title span {
-    opacity: 1;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .notice {
