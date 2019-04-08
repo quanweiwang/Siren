@@ -1,15 +1,15 @@
 @charset "utf-8";
 /*
-Theme Name: Siren
-Theme URI: http://i94.me
-Author: Louie
-Author URI: http://i94.me
-Description: Akina主题分支（原版地址 http://www.akina.pw/themeakina）
-Version: 2.0.6.170420
+Theme Name: Jasmine
+Theme URI: https://www.wangquanwei.com/
+Author: wangquanwei
+Author URI: https://www.wangquanwei.com/
+Description: Akina主题分支Siren的修改版（原版地址 http://www.akina.pw/themeakina）
+Version: 1.0.0.190408
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: akina
-Tags: Akina（娱乐版）
+Tags: Siren(修改版)
 */
 
 /*--------------------------------------------------------------
@@ -1363,10 +1363,9 @@ i.iconfont.hotpost {
 .post-list-thumb {
     float: left;
     width: 100%;
-    height: 300px;
     position: relative;
     margin: 20px 0 40px 0;
-    padding: 20px 40px 20px 40px;
+    /*padding: 20px 40px 20px 40px;*/
     /*border: 1px solid rgba(0,0,0,0.05);*/
     background-color: #FFFFFF;
     border-radius: 10px;
@@ -1437,12 +1436,13 @@ i.iconfont.hotpost {
 .post-thumb {
     float: right;
     width: 55%;
+    padding: 0;
     background-size: contain;
     overflow: hidden;
 }
 
 .post-thumb a {
-    height: 260px;
+    height: 300px;
     position: relative;
     display: block;
     background-repeat: no-repeat;
@@ -1453,8 +1453,9 @@ i.iconfont.hotpost {
     position: relative;
     display: inline-block;
     float: right;
-    padding-right: 30px;
-    padding-left: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
     width: 45%;
 }
 
@@ -1483,8 +1484,9 @@ i.iconfont.hotpost {
 
 .post-list-thumb-left .post-content-wrap {
     float: left;
-    padding-left: 30px;
-    padding-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
     text-align: right;
 }
 
@@ -5820,6 +5822,7 @@ i.iconfont.down {
    bottom: -80px;
    left: 48%;
    height: 200px;
+   z-index: 9999;
    -webkit-transform: rotate(-6deg);
    -moz-transform: rotate(-6deg);
    -ms-transform: rotate(-6deg);
@@ -5834,6 +5837,7 @@ i.iconfont.down {
    bottom: -80px;
    right: 48%;
    height: 200px;
+   z-index: 9999;
    -webkit-transform: rotate(6deg);
    -moz-transform: rotate(6deg);
    -ms-transform: rotate(6deg);
