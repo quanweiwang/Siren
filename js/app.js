@@ -365,12 +365,11 @@ var home = location.href,
             ss = $(document).scrollTop();
         $(window).scroll(function(){
             var s = $(document).scrollTop();
-            // if(s== h1){
-            //     $('.site-header').removeClass('yya');
-            // }if(s > h1){
-            //     $('.site-header').addClass('yya');
-            // }
-            if(s > h2){
+            if(s== h1){
+                $('.site-header').removeClass('yya');
+            }if(s > h1){
+                $('.site-header').addClass('yya');
+            }if(s > h2){
                 $('.site-header').addClass('gizle');
                 if(s > ss){
                     $('.site-header').removeClass('sabit');

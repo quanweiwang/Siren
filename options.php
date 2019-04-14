@@ -226,10 +226,10 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'name' => __('icp备案信息', 'options_framework_theme'),
-		'desc' => __('例如: 闽ICP备00000000-1号，支持HTML代码', 'options_framework_theme'),
+		'desc' => __('例如: 闽ICP备00000000-1号', 'options_framework_theme'),
 		'id' => 'footer_icp',
 		'std' => '',
-		'type' => 'textarea');
+		'type' => 'text');
 
 	$options[] = array(
 		'name' => __('显示网站运行时间', 'options_framework_theme'),
