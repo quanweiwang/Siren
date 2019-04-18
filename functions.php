@@ -617,7 +617,7 @@ add_action('comment_post', 'comment_mail_notify');
 if(!function_exists('Baidu_Submit')){
     function Baidu_Submit($post_ID) {
         $WEB_TOKEN  = 'VP7KKxCI5V9gr9Qt';  //这里请换成你的网站的百度主动推送的token值
-        $WEB_DOMAIN = get_option('home');
+        $WEB_DOMAIN = 'https://www.wangquanwei.com/';
         //已成功推送的文章不再推送
         if(get_post_meta($post_ID,'Baidusubmit',true) == 1) return;
         $url = get_permalink($post_ID);

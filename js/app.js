@@ -361,24 +361,36 @@ var home = location.href,
     // 显示&隐藏导航栏
     NH: function(){
         var h1 = 0,
-            h2 = 50,
+            // h2 = 50,
             ss = $(document).scrollTop();
         $(window).scroll(function(){
             var s = $(document).scrollTop();
             if(s== h1){
                 $('.site-header').removeClass('yya');
+                $('.site-top .lower').css("display","none");
             }if(s > h1){
                 $('.site-header').addClass('yya');
-            }if(s > h2){
-                $('.site-header').addClass('gizle');
-                if(s > ss){
-                    $('.site-header').removeClass('sabit');
-                }else{
-                    $('.site-header').addClass('sabit');
-                }
+                $('.site-top .lower').css("display","inline-block");
                 ss = s;
             }
-        }); 
+            // if(s > h2){
+            //     $('.site-header').addClass('gizle');
+            //     if(s > ss){
+            //         $('.site-header').removeClass('sabit');
+            //     }else{
+            //         $('.site-header').addClass('sabit');
+            //     }
+            //
+            // }
+        });
+
+        $(".site-header").hover(function (){
+            $('.site-header').addClass('yya');
+            $('.site-top .lower').css("display","inline-block");
+        },function (){
+            $('.site-header').removeClass('yya');
+            $('.site-top .lower').css("display","none");
+        });
     },
 
     // Ajax加载文章

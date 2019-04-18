@@ -996,7 +996,7 @@ a:active {
 --------------------------------------------------------------*/
 .site-top .lower {
     position: relative;
-    display: inline-block;
+    display: none;
     float: right;
     margin: 16.5px 0 0 0;
     font-size: 15px;
