@@ -22,9 +22,6 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<div class="footertext">
-				<p>Crafted with by <a href="https://www.wangquanwei.com" rel="designer" target="_blank" rel="nofollow">Wang</a></p>
-			</div>
-			<div class="footertext">
 				<p>&copy <?php echo akina_option('footer_info', ''); ?> - <?php echo date("Y")?>&nbsp<?php bloginfo('name');?>&nbsp<a href="https://www.miitbeian.gov.cn" rel="designer" target="_blank" rel="nofollow"><?php echo akina_option('footer_icp', ''); ?></a></p>
 			</div>
 			<!-- 站点运行天数开始 -->
@@ -34,11 +31,6 @@
 				</div>
 			<?php } ?>
 			<!--站点运行天数结束  -->
-			<div class="footer-sponsors">
-				<a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=j42eulwe" rel="designer" target="_blank" rel="nofollow"><img src="<?php bloginfo('url');?>/wp-content/uploads/2019/04/aliyun-w80.png"></a> 
-				&nbsp
-				<a href="https://portal.qiniu.com/qvm/active?code=1381000227ol0Do" rel="designer" target="_blank" rel="nofollow"><img src="<?php bloginfo('url');?>/wp-content/uploads/2019/04/qiniuyun-w80.png"></a>
-			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 	<div class="openNav">

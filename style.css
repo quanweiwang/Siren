@@ -395,7 +395,7 @@ blockquote:after {
     font-size: 4rem;
     position: absolute;
     top: -50px;
-    right: -5px;
+    right: -12px;
     color: #ABABAB;
     font-family: "SimHei",sans-serif;
 }
@@ -1711,24 +1711,39 @@ i.iconfont.hotpost {
     position: relative;
 }
 
+.entry-content h1 {
+
+}
+
+.entry-content h2 {
+    color: #FFFFFF;
+    background: #999999;
+    padding: 10px 0 10px 10px;
+    font-weight: bolder;
+    border-radius: 3px;
+}
+
 .entry-content h3 {
-    padding-bottom: 8px;
-    border-bottom: 1px dashed #ddd;
+    color: #4A4A4A;
+    background: #F9F9F9;
+    padding: 10px 0 10px 10px;
+    font-weight: normal;
+    border-radius: 3px;
+}
+
+.entry-content h4 , .entry-content h5 {
+    padding: 10px 35px;
+    background: #FFF6B5;
     color: #737373;
+    font-weight: normal;
+    border-radius: 3px;
+    position:relative;
+    box-shadow: 0 2px 3px rgba(0,0,0,.06);
 }
 
-.entry-content h3:before {
-    content: "[";
-    margin-right: 5px;
-    color: #FF6D6D;
-    font-size: 25px;
-}
-
-.entry-content h3:after {
-    content: "]";
-    margin-left: 5px;
-    color: #FF6D6D;
-    font-size: 25px;
+.entry-content h5 {
+    font-size: 16px;
+    background: #C8E6FB;
 }
 
 .entry-content code {
@@ -1756,11 +1771,11 @@ h1.entry-title {
 }
 
 .entry-content p {
-    color: #797979
+    color: #797979;
 }
 
 .entry-content p {
-    line-height: 30px
+    line-height: 30px;
 }
 
 .entry-content hr {
